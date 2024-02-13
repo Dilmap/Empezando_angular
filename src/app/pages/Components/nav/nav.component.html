@@ -1,0 +1,42 @@
+<body>
+  <header class="header">
+  <div class="header__content">
+      <div class="header__logo">
+          <img class="header__logo-img" src="./assets/img/Logo_banner_footer.svg" alt="Logo">
+      </div>
+      <nav class="header__nav">
+          <div class="header__nav-link">
+              <a routerLink="home">Home</a>
+          </div>
+          <div class="header__nav-link">
+              <a routerLink="about-us">About Us</a>
+          </div>
+          <div class="header__nav-link">
+              <a routerLink="blog">Blog</a>
+          </div>
+          <div class="header__nav-link">
+              <a routerLink="blog-post">Blog single</a>
+          </div>
+          <div class="header__nav-link">
+              <a routerLink="carrer">Carrer</a>
+          </div>
+      </nav>
+      <div class="header__button">
+        <div class="header__nav-cart"  >
+            <img class="funcion_desaparecer" src="./assets/img/icon_cart.png" alt="icon_cart">
+            <div class="contenedor_redes_principal">
+              @for (item of array_redes_sociales; track $index) {
+                <div class="contenedor_redes">
+                  <div class="img_redes">
+                    <img [src]="item.icon" alt="{{item.title}}">
+                  </div>
+                  <p>{{item.title}}</p>
+                </div>
+              }
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</body>
+

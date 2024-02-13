@@ -1,0 +1,244 @@
+@import '../../Components/header/header.component';
+@import '../../Components/component/component.component';
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.headboard--fondo{
+  width: 90%;
+  position: relative;
+  background-image: url(/assets/img/background_headboard-1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size:100% auto;
+  margin: auto;
+  color: white;
+  text-align: center;
+  border-radius: 1vw;
+}
+p{
+  color:  #797979;
+}
+.color--blanco{
+  color:  white;
+}
+.secciomn_alineamiento {
+  display: flex;
+  flex-direction: column;
+  padding: 10vw 10vw 0px 10vw;
+  gap: 10vw;
+  padding-bottom: 20vh;
+}
+.contenedor--alinear {
+  display: flex;
+  gap: 3vw;
+}
+.imagen--ancho{
+  width: 40vw;
+  padding-bottom: 1vw;
+}
+.acomodo_flex {
+  display: flex;
+  gap: 4.1vw;
+}
+.imagen--menos_ancho{
+  width: 22vw;
+}
+.boton_morado {
+  padding: 4vh 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  color: white;
+  background: #5956E9;
+  border-radius: 1.1vw;
+}
+.texto--mas_grande{
+  font-size: 4vw;
+}
+.text--principal{
+  font-size: 3vw ;
+}
+.text--grande{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 3vw;
+}
+.espaciados_abajo_texto{
+  display: grid;
+  padding-bottom: 4vh;
+  border-bottom: 0.1vw solid #f6f6f6;
+  gap: 1vw;
+}
+.espaciados_arriba_texto{
+  display: grid;
+  padding-top: 4vh;
+  padding-bottom: 2vh;
+  gap: 1vw;
+
+}
+.espacio--arriba{
+  padding-top: 4vh;
+}
+.ancho--boton{
+  padding: 2vh 1vw;
+  width: 11vw;
+  font-size: 0.9vw;
+}
+.alineando--flex{
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.fondo--gris{
+  background-color: #f6f6f6;
+  padding: 2vw;
+  width: 6.5vw;
+  border-radius: 1vw;
+}
+.espacio--abajo{
+  padding: 3vh 0px;
+}
+.texto_alineado {
+  display: grid;
+  gap: 5vw;
+  padding: 0px 10vw;
+}
+.centrado--texto{
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+}
+.alinear_centro{
+  text-align: center;
+}
+.texto--menos_grande{
+  font-size: 2.8vw;
+}
+.color--morado{
+  color:  #5956e9;
+}
+.seccion_mission{
+  display: flex;
+  gap: 1vw;
+}
+.mission_espacio{
+  display: grid;
+  gap: 0.1vh;
+}
+.imagen--chulito{
+  width: 1.5vw;
+}
+.imagen_mission{
+  width: 18.8vw;
+}
+.espacio--mission{
+  padding: 5vw 0px;
+}
+.seccion_values{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10vh;
+}
+.contenido_value{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 10vw;
+  row-gap: 5vh;
+}
+.dalos_value{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  padding: 2vw;
+  width: 22vw;
+}
+.dalos_value:hover::after{
+  content: "";
+  display: grid;
+  width: 25vw;
+  height: 40vh;
+  border: 0.1vw solid #f0eaea;
+  border-radius: 1vw;
+  position: absolute;
+}
+.value_imagen{
+  width: 5.5vw;
+}
+.parrafo_value{
+  text-align: center;
+}
+.seccion_team{
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  background-color: #5b57ff;
+  padding: 15vh 10vw;
+  color: white;
+}
+.seccion_team p{
+  color: white;
+  font-weight: 100;
+}
+.contenido_team{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor_imagenes_team{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.perfil_team{
+  width: 24.5vw;
+}
+.contenedor_iconos_team{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3vh;
+  gap: 2vw;
+}
+.icono_blanco_facebook{
+  width: 0.8vw;
+}
+.icono_blanco_twiter{
+  width: 1.6vw;
+}
+.icono_blanco_in{
+  width: 1.4vw;
+}
+.seccion_investors{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:  20vh 10vw;
+}
+.alinear_investors {
+  padding-top: 10vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 1vw;
+  row-gap: 3vh;
+}
+.fondo_gris{
+  background-color: #f0eaea;
+  padding: 8vh 4vw;
+  border-radius: 1vw;
+}
+.logo_titulo {
+  width: 13.5vw;
+  padding-bottom: 1vw;
+}
+.logo_titulo--ini{
+  width: 12vw;
+  padding-bottom: 1vw;
+}

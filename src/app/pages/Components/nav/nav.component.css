@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;500;700&display=swap');
+@import '../../Components/component/component.component';
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/*--------------------  HEADER --------------------*/
+.button--small-header{
+  aspect-ratio: 9/3;
+  height: 2.5em;
+}
+.header__content{
+  padding: 1em 0;
+}
+.header__logo img{
+  width: 12em;
+}
+.header__content{
+  display: grid;
+  grid-template-columns: max-content auto max-content;
+  width: 90%;
+  margin: auto;
+}
+.header__nav-link{
+  display: flex;
+  gap: .5em;
+}
+.header__nav-arrow img{
+  width: .8em;
+  filter: contrast(100);
+}
+.header__nav,
+.header__button,
+.header__logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.header__nav{
+  gap: 3em;
+}
+.header__nav-button,
+.header__nav-cart{
+  display: flex;
+  align-items: center;
+}
+.header__nav-cart img{
+  width: 2.5em;
+}
+
+.contenedor_redes_principal{
+  display: flex;
+  flex-direction: column;
+  padding: 1.5vw;
+  position: absolute;
+  z-index: 100;
+  top: 8vh;
+  right: 5vw;
+  background-color:rgb(53, 204, 255);
+  padding-left: 2vw;
+  width: 13vw;
+  border: 0.5vh solid rgb(126, 35, 255);
+  border-radius: 6vh;
+}
+
+.contenedor_redes{
+  width: 10vw;
+  display: flex;
+  gap: 1vw;
+  padding-top: 2vh;
+}
+
+.contenedor_redes img{
+  width: 2vw;
+}
+
+.contenedor_redes p{
+  color: rgb(57, 67, 76);
+}
+
+.contenedor_redes_principal{
+  display: none;
+}
+
+.funcion_desaparecer:hover{
+ display: block;
+}
+/*--------------------  HEADER --------------------*/
+

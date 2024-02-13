@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;500;700&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root{
+    --color-p1-shadow-height: #5956e9;
+    --color-p2-shadow: #2f2f2f;
+    --color-s1-light: #f6f6f6;
+    --color-s4-light-height: #f9f9f9;
+    --color-s2-white: #ffff;
+    --color-s3-light-low: #797979;
+    --color-s4-light-low: #f0eaea;
+    --color-border-s1: #f0eaea;
+}
+.componentes__body{
+    margin: 0px;
+    font-family: 'Mulish', sans-serif;
+    display: grid;
+    gap: 2em;
+
+}
+body{
+    font-size: 1.12vw;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    /* font-size: clamp(10px, 1.2em, 20px); */
+}
+input, textarea {
+    font-size: 1.12vw;
+}
+
+h1{
+    font-size: 3em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.5em;
+}
+h4{
+    font-size: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.user-select-none{
+    user-select: none;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.color-blanco{
+    color: #ffff;
+}
+/*--######################## button ########################--*/
+.button{
+    background-color:#ffff;
+    border: .1em solid;
+    border-color: #f0eaea;
+    color: #2f2f2f;
+    font-weight: 800;
+    border-radius: 1000px;
+    /* font-family: system-ui; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .5s ease-in-out;
+    transition: box-shadow .5s ease-in-out;
+    /* width: 15em;    */
+    max-width: max-content;
+    min-height: min-content;
+    height: 3.5em;
+}
+
+.button:hover{
+    box-shadow: inset 0px 0px .5em rgba(0, 0, 0, .5);
+    transition: box-shadow .5s ease-in-out;
+}
+
+
+.button--shadow{
+    background-color: #2f2f2f;
+    border-color: #2f2f2f;
+    color: white;
+    box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: box-shadow .5s ease-in-out;
+    transition: border-color .2s ease-in-out;
+    aspect-ratio: 150/30;
+}
+.button--shadow:hover{
+    border-color:#ffff;
+    border: .1em solid;
+    box-shadow: inset 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: box-shadow .5s ease-in-out;
+    transition: border-color 1s ease-in-out;
+}
+.button--shadow:focus{
+    color:#2f2f2f;
+    background-color: #ffff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .5);
+    border-color:#f6f6f6;
+    transition: .2s ease-in-out;
+}
+.button--small{
+    min-height: max-content;
+    height: 3em;
+    aspect-ratio: 120/30;
+}
+.button--emphasis-small{
+    background-color: #5956e9;
+    border-color:#5956e9;
+    color: white;
+}
+
+.button--emphasis-small:hover{
+    box-shadow: 0px 0px 1em rgb(89, 86, 233);
+    transition: box-shadow .5s ease-in-out;
+}
+.button--emphasis-small:focus{
+    color:#2f2f2f;
+    background-color: #ffff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .5);
+    border: .1em solid;
+    border-color:  #f0eaea;
+    transition: .2s ease-in-out;
+}
+
+.button--large{
+    aspect-ratio: 190/30;
+}
+
+.button--emphasis{
+    background-color: #5956e9;
+    border-color:#5956e9;
+    color: white;
+    box-shadow: 0px 0px 1em rgba(0, 0, 0, 0);
+    transition: background-color .5s ease-in-out;
+    transition: box-shadow .5s ease-in-out;
+    aspect-ratio: 150/30;
+}
+
+.button--emphasis:hover{
+    box-shadow: 0px 0px 1em rgb(89, 86, 233);
+    transition: box-shadow .5s ease-in-out;
+}
+.button--emphasis:focus{
+    color: #2f2f2f;
+    background-color:#ffff;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .5);
+    border: .1em solid;
+    border-color:  #f0eaea;
+    transition: .2s ease-in-out;
+}
+
+.button--tag{
+    background-color: #f0eaea;
+    border: .1em solid;
+    font-weight: 500;
+    border-radius: 1000px;
+    font-family: system-ui;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 2.5em;
+    padding: 0 2em;
+    border-color:#f0eaea;
+    font-family: 'Mulish', sans-serif;
+    font-weight: normal;
+    max-width: max-content;
+}
+.button--emphasis-tag{
+    background-color:#5956e9;
+    border-color:#5956e9;
+    color: white;
+}
+.boton--color{
+    padding: 2vh 1vw;
+    width: 11vw;
+    background-color: #797979;
+    font-size: 1vw;
+}
+
+/*--######################## button ########################--*/
+/*--######################## input ########################--*/
+
+input[type="text"], textarea, input[type="email"]{
+    height: 3em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    border: .14em solid #00000028;
+    border-radius: 1.5em;
+    font-family: 'Mulish', sans-serif;
+}
+textarea{
+    resize: none;
+}
+input[type="text"]:focus, textarea:focus, input[type="email"]:focus{
+    outline: 0;
+}
+.container-input{
+    display: grid;
+    gap: 10px;
+}
+textarea:focus{
+    outline: 0;
+}
+
+.container-input--buton{
+    position: relative;
+}
+.input-buton{
+    border-radius: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: grid;
+    margin: auto;
+    height: 76%;
+    margin-right: .4em;
+    text-align: center;
+    aspect-ratio: 8/3;
+}
+input.input-style-3{
+    border-radius: 100px;
+    height: 3.5em;
+}
+input.input-style-3::placeholder{
+    color: black;
+}
+
+.acomodo--boton {
+  padding: 2vh 1vw;
+  width: 15vw;
+  font-size: 1vw;
+}
+/*--######################## input ########################--*/
