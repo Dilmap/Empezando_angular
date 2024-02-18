@@ -23,8 +23,11 @@
       </nav>
       <div class="header__button">
         <div class="header__nav-cart"  >
-            <img class="funcion_desaparecer" src="./assets/img/icon_cart.png" alt="icon_cart">
-            <div class="contenedor_redes_principal">
+          <input id="rotar" class="rotar" type="checkbox">
+          <label for="rotar">
+            <img (click)="mostrar()" class="funcion_desaparecer" src="./assets/img/icon_cart.png" alt="icon_cart">
+          </label>
+          <div [style.display]="div" class="contenedor_redes_principal">
               @for (item of array_redes_sociales; track $index) {
                 <div class="contenedor_redes">
                   <div class="img_redes">
@@ -35,6 +38,11 @@
               }
             </div>
         </div>
+        <div class="header__nav-button">
+          <a routerLink="contact-us" class="button button--small button--small-header user-select-none cursor-pointer"> <!--Modificadores button--tag button--emphasis button--emphasis-tag button--emphasis-small button--small button--large -->
+            Contact Us
+          </a>
+      </div>
       </div>
     </div>
   </header>

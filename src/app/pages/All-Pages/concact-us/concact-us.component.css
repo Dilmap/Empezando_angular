@@ -1,0 +1,232 @@
+@import '../../Components/header/header.component';
+@import '../../Components/component/component.component';
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.text--color-white, .text--color-gray{
+  line-height: 1.4em;
+}
+.text--color-gray{
+  color: var( --color-s3-light-low);
+}
+.section__branch{
+  margin: auto;
+}
+.section_title{
+  display: grid;
+  justify-content: center;
+}
+.section__title-tex{
+  text-align: center;
+}
+.section_conten{
+  height: 34vh;
+  background-color: #F6F6F6;
+  border-radius: 1em;
+
+  padding: 3em;
+}
+.container{
+  margin-top: 1em;
+  display: flex;
+  gap: 1em;
+  position: relative;
+}
+.container__info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container__info-ellipse
+{
+  background-color: #FFDCE9;
+  width: 5em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container__button{
+ padding: 0.3em;
+}
+.container__info-ellipse h3{
+  margin: auto;
+  color: #DD7FA1;
+}
+.container__info-tex p {
+  font-size: 0.80em;
+  color:#808080 ;
+}
+.container__button{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container__info-ellipse-darling{
+  background-color: #B1DEFF;
+  width: 5em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container__info-ellipse-darling h3{
+  margin: auto;
+  color: #3694D8;
+}
+.container__info-ellipse-green{
+  background-color: #C5E8C4;
+  width: 5em;
+  height: 5em;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.container__info-ellipse-green h3 {
+  color: #6EAB6C;
+  margin: auto;
+}
+.section__faq{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  margin-bottom: 6em;
+}
+.section__container-faq{
+  display: grid;
+  gap: 1.5em;
+}
+.faq__title{
+  text-align: center;
+}
+.faq__conte{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.06rem solid var(--color-s1-light);
+  border-radius: .7em;
+  padding: 1em;
+}
+.faq__lista{
+  display: flex;
+  gap: 1em;
+}
+.faq__fondo{
+  background-color: #F6F6F6;
+}
+.faq__conte-text{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  padding-left: 2.5em;
+}
+.faq__lista{
+  line-height: 1.4em;
+  color: var( --color-s3-light-low);
+}
+
+.faq__img{
+  width: 2em;
+  height: 2em;
+  background-color: var(--color-s4-light-low);
+  border-radius: 5em;
+  transition: background-color .2s ease-in-out;
+}
+.faq{
+  height: 4.4em;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border-radius: .7em;
+}
+
+.faq:focus-within{
+  height: 30em;
+  background-color: var(--color-s1-light);
+  transition-property: height, background-color;
+  transition: .2s ease-in-out;
+}
+.faq:focus-within > .faq__conte > .faq__img{
+  background-color: var(--color-p1-shadow-height);
+  transition: background-color .2s ease-in-out;
+  transition-property: background-color;
+  transition: .2s ease-in-out;
+}
+
+.headboard__content-datos{
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.headboard__phone,
+.headboard__email {
+  display: flex;
+  gap: 1em;
+  font-size: 1em;
+}
+.headboard__email img{
+  width: 2vw;
+  height: 3vh;
+}
+.headboard__phone img{
+  width: 2.1vw;
+  height: 3.1vh;
+}
+.headboard__phone,
+.headboard__email h4{
+  font-size: 0.8em;
+}
+.headboard__infomacion{
+  background-color: #FFFFFF;
+  padding: 3em 2em;
+  border-radius: 1em;
+  width: 65vw;
+  margin: auto;
+}
+.headboard__infomacion-contenedor{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1em;
+  z-index: 3;
+}
+.headboard__infomacion-data{
+  display: grid;
+  gap: 2em;
+}
+
+label{
+  color: black;
+  text-align: left;
+}
+.headboard__infomacion{
+  position: relative;
+  display: grid;
+  gap: 2em;
+  z-index: 10;
+  filter: drop-shadow(0 0 .5em rgba(0, 0, 0, 0.2 ));
+}
+input#input-text {
+  border-radius: 1em;
+  height: 2.5em;
+  width: 26.5em;
+}
+.container__button-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+textarea {
+  width: 60.5vw;
+  height: 30vh;
+  resize: none;
+  padding: 3vh;
+}
+
+
+

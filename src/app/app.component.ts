@@ -8,11 +8,12 @@ import { BlogPostComponent } from './pages/All-Pages/blog-post/blog-post.compone
 import { AboutUsComponent } from './pages/All-Pages/about-us/about-us.component';
 import { FooterComponent } from './pages/Components/footer/footer.component';
 import { NavComponent } from './pages/Components/nav/nav.component';
+import { ConcactUsComponent } from './pages/All-Pages/concact-us/concact-us.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, FooterComponent, NavComponent, HomeComponent, CarrerComponent, Error404Component, BlogComponent, BlogPostComponent, AboutUsComponent],
+  imports: [RouterOutlet, FooterComponent, NavComponent, HomeComponent, CarrerComponent, Error404Component, BlogComponent, BlogPostComponent, AboutUsComponent, ConcactUsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -20,4 +21,3 @@ import { NavComponent } from './pages/Components/nav/nav.component';
 export class AppComponent {
   title = 'proyecto-nueva-prueba';
 }
- 

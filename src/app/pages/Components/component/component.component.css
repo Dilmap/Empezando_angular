@@ -207,7 +207,7 @@ input[type="text"]:focus, textarea:focus, input[type="email"]:focus{
 }
 .container-input{
     display: grid;
-    gap: 10px;
+    gap: 1.5vw;
 }
 textarea:focus{
     outline: 0;

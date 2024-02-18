@@ -1,0 +1,66 @@
+<body>
+  <header class="header">
+  <section class="headboard-section">
+      <div class="headboard">
+          <div class="headboard__content">
+              <div class="headboard__content-text">
+                  <h1 class="headboard__content-title">
+                      Get in Touch
+                  </h1>
+                  <div class="headboard__content-datos">
+                      <div class="headboard__email">
+                          <img src="/assets/img/Icon-Mail.png" alt="icono">
+                          <h4>{{title}}</h4>
+                      </div>
+                      <div class="headboard__phone">
+                          <img src="/assets/img/Icon-cel.png" alt="icono">
+                          <h4>(011) 6543 8974 210</h4>
+                      </div>
+                  </div>
+              </div>
+              <div class="headboard__graphics-contenido">
+                  <div class="headboard__graphics-content headboard__graphics-content-dropshadow">
+                      <form [formGroup]="formulario" (ngSubmit)="envio()" class="headboard__infomacion">
+                          <div class="headboard__infomacion-contenedor">
+                              <div class="headboard__infomacion-data">
+                                  <!--Modificador headboard__graphics-content-dropshadow (Realiza el tuyo)-->
+                                  <div class="container-input">
+                                      <label for="input-text"> Full Name *</label>
+                                      <input formControlName="name" id="input-text" type="text" placeholder="John David">
+                                  </div>
+                                  <div class="container-input">
+                                      <label for="input-text"> Your email *</label>
+                                      <input formControlName="email" id="input-text" type="text" placeholder="example@yourmail.com">
+                                  </div>
+                              </div>
+                              <div class="headboard__infomacion-data">
+                                  <!--Modificador headboard__graphics-content-dropshadow (Realiza el tuyo)-->
+                                  <div class="container-input">
+                                      <label for="input-text"> Company *</label>
+                                      <input formControlName="company" id="input-text" type="text" placeholder="your company name here">
+                                  </div>
+                                  <div class="container-input">
+                                      <label for="input-text"> Subject *</label>
+                                      <input formControlName="subject" id="input-text" type="text" placeholder="How can we Help">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="container-input">
+                              <label for="input-area"> Message *</label>
+                              <textarea formControlName="message" name="message"id="input-area"
+                                  placeholder="Hello there,I would like to talk about how to..."></textarea>
+                          </div>
+                          <div class="container__button-form">
+                              <button type="submit" class="button button--shadow user-select-none cursor-pointer" >
+                                  <!--Modificadores button--tag button--emphasis button--emphasis-tag button--emphasis-small button--small button--large -->
+                                  button confirm
+                              </button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</header>
+</body>

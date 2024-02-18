@@ -7,6 +7,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   imports: [RouterOutlet, RouterLink],
   templateUrl: './nav.component.html',
   styleUrl: './nav.component.css',
+  
 })
 export class NavComponent {
   array_redes_sociales:any = [
@@ -16,5 +17,14 @@ export class NavComponent {
     {title: 'Pinterest',  icon: './assets/img/Pintrest.svg'},
   ];
 
-  
+  div = 'none';
+
+  mostrar(){
+    if(this.div === 'none'){
+      this.div='block'
+    }
+    else{
+      this.div='none'
+    }
+  }
 }
